@@ -99,6 +99,7 @@ bool MonsterRoom::onEnter(Player* player) {
     }
     else {
         cout << "The monster is already dead." << endl;
+        return true;
     }
 }
 
