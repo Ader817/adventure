@@ -37,13 +37,20 @@ Use the following commands to move between rooms:
 
 ### Building Steps
 ```bash
+# Change to build directory
+cd build
+
 # Compile the game
 make
+
+# Return to main directory
+cd ..
 
 # Run the game
 ./adventure
 
-# Clean build files
+# Clean build files (from build directory)
+cd build
 make clean
 
 # Rebuild
@@ -54,15 +61,17 @@ make rebuild
 
 ```
 adventure/
-├── main.cpp       # Program entry point
-├── player.h       # Player class declaration
-├── player.cpp     # Player class implementation
-├── room.h         # Room class declaration
-├── room.cpp       # Room class implementation
-├── map.h         # Map class declaration
-├── map.cpp       # Map class implementation
-├── Makefile      # Build script
-└── README.md     # Project documentation
+├── scripts/        # Source code directory
+│   ├── main.cpp    # Program entry point
+│   ├── player.h    # Player class declaration
+│   ├── player.cpp  # Player class implementation
+│   ├── room.h      # Room class declaration
+│   ├── room.cpp    # Room class implementation
+│   ├── map.h       # Map class declaration
+│   └── map.cpp     # Map class implementation
+├── build/          # Build directory
+│   └── Makefile    # Build script
+└── README.md       # Project documentation
 ```
 
 ## Game Rules

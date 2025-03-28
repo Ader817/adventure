@@ -38,7 +38,7 @@ void Player::setCurrentRoom(Room *room)
 void Player::pickUpKey() { hasKey = true; }
 void Player::pickUpSword() { hasSword = true; }
 void Player::savePrincess() { hasPrincess = true; }
-void Player::setIsAlive(bool isAlive) { this->isAlive = isAlive; cout << this->isAlive; }
+void Player::setIsAlive(bool isAlive) { this->isAlive = isAlive; }
 
 bool Player::hasTheKey() const { return hasKey; }
 bool Player::hasTheSword() const { return hasSword; }

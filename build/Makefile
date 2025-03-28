@@ -1,7 +1,8 @@
 CXX = g++
 CXXFLAGS = -Wall -std=c++11
-TARGET = adventure
-SOURCES = $(wildcard *.cpp)
+TARGET = ../adventure
+SRCDIR = ../scripts
+SOURCES = $(wildcard $(SRCDIR)/*.cpp)
 
 $(TARGET): $(SOURCES)
 	$(CXX) $(CXXFLAGS) $(SOURCES) -o $(TARGET)
